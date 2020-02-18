@@ -1,0 +1,10 @@
+version: '3.5'
+services: 
+        jagzeywebapp:
+                image: jagzwebapp:v10
+                build: 
+                 context: .
+                 dockerfile: jagz.dockerfile
+                container_name: jagzeycont1
+                ports: 
+                 - "1241:80"
